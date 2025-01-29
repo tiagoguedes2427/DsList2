@@ -4,11 +4,9 @@ import java.util.Objects;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 
-//Embeddable para representar uma chave com dois 
-//Campos
+
 @Embeddable
 public class BelongingPK {
 	
@@ -19,6 +17,9 @@ public class BelongingPK {
 	@ManyToOne
 	@JoinColumn(name = "list_id")
 	private GameList list;
+	
+	
+	
 	
 	public BelongingPK() {
 	}
