@@ -1,7 +1,12 @@
 package com.tiagoguedes.DSlist2.DTO;
 
+import java.util.List;
+
 import com.tiagoguedes.DSlist2.entities.Game;
 
+/* DTO para resumir, ou usar apenas atributos que irei precisar
+ * de uma determinada entitade
+ * */
 public class GameMinDTO {
 	
 	private Long id;
@@ -9,6 +14,7 @@ public class GameMinDTO {
 	private Integer year;
 	private String imgUrl;
 	private String shortDescription;
+	private Game game = new Game();
 	
 	public GameMinDTO() {}
 	
@@ -40,6 +46,14 @@ public class GameMinDTO {
 	public String getShortDescription() {
 		return shortDescription;
 	}
+
+	
+	/*
+    public static List<GameMinDTO> listAllGames() {
+        
+		return List(game);
+    }
+    */
 
 	
 	
